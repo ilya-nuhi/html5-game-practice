@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+h4{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 15px;
+	
+	padding:0 40px 10px 15px;
+}
+
+.busy{	
+	height: 100px;
+	width: 100px;
+	background:url(../images/busy.gif) no-repeat;
+}
+
+nav ul {
+	list-style-type: none;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #111111;
+}
+
+canvas{
+	background: url(../images/canvas_bg.png)
+}
+
+#hierarchy{
+	width: 100%;
+}
+
+#timeline{
+	width: 100%;
+	height: 260px;
+}
+
+.navbar{
+	margin: 0 -15px 0 -15px;
+}
+
+#preview{
+	background: url(../images/canvas_bg.png);
+	margin: 0;
+	padding: 0;
+}
+
+.spri_section_name{
+	background: #333;
+	color: #fff;
+	margin-left: 15px;
+	padding-left: 15px;
+}
+
+.nopadding{
+	padding: 0;
+}
+
+.column {
+    float: left;
+    padding: 0;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+	margin-bottom: -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav{
+	background: #333;
+	margin-bottom: 0;
+	height: 50px;
+	width: 100%;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: hidden; /* no scroll */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-flex{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #D3D2D2;
+    margin: 100px auto; 
+    padding: 0 20px 20px 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.projects {
+    width: 80%; /* Could be more or less, depending on screen size */
+	height: 80%;
+}
+
+.project-cell{
+	display:inline-block;
+	border:#FFFFFF solid thick;
+	width:160px;
+	height:100px;
+	margin:5px;
+}
+
+/*.project-cell a:hover{
+	border: #E0E805 solid thick;
+}*/
+
+.project-cell img{
+	margin-top: -20px;
+}
+
+.closebtn{
+	display:flex;
+	align-content: center;
+	justify-content: center;
+	/*margin-right: -4px;
+	margin-top: -4px;*/
+	font-size: 16px;
+	font-weight: bold;
+	color:#00C6B5;
+	background: #fff;
+	width: 20px;
+	height:20px;
+	position:relative;
+	top: -4px;
+	left: 142px;
+	z-index: 10;
+	/* float:right;
+	clear:both; */
+}
+
+.deleteBtn{
+	background: #FF2349;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.closebtn a:hover{
+	background: #E0E805;
+}
+
+.dummybtn{
+	width: 20px;
+	height: 20px;
+	position:relative;
+	top: -4px;
+	left: 142px;
+}
+
+#myProjects, #exampleProjects{
+	min-height: 60px;
+	max-height: 250px;
+	overflow-y: scroll;
+	margin: 20px 0;
+}
+
+.modal-content h3{
+	background: #333;
+	padding: 6px 0 6px 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-top: 0px;
+	color: #fff;
+}
+
+.modal-content input[type=text], .modal-content input[type=password], .modal-content input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.modal-content textarea{
+	width: 100%;
+	height: 200px;
+	padding: 15px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+.modal-content label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.modal-content button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/* The Close Button */
+.modal-content .close {
+	margin-top: -53px;
+	margin-right: -10px;
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+#images ul{
+	margin-top: 5px;
+}
+
+.plist li a:hover{
+	color: #689C52;
+}
+
+.plist li.active a{
+	background:#689C52;
+	color: #fff;
+}
+
+.plist li{
+	list-style-type: none;
+	margin:0 0 0 -25px;
+	padding:0;
+}
+
+#images button, #sprites button, #actions button, #nodes button{
+	background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	opacity: 0.5;
+}
+
+#mouseAction{
+	position:absolute;
+	top: 60px;
+	right: 10px;
+	color: #fff;
+}
+
+.animMode{
+	display: none;
+}
+
+#easingMenu{
+	display:none;
+	position:absolute;
+	width: 100px;
+	height: 20px;
+	background:#D9D9D9;
+}
+
+@media screen and (max-width: 910px) {
+	.column.left nav ul{
+		font-size: 12px;
+	}
+	
+	.column.left nav li a {
+		padding: 10px;
+	}
+}
+
+.progress{
+	display:none;
+	width:50%;
+	height:10px;
+	border-radius:5px;
+	background: #E9E9E9;
+}
+
+.done{
+	height:10px;
+	border-radius:5px;
+	background:#71B969;
+}
+
+#mouseAction a{
+	background: #5A9050;
+	border-radius: 5px;
+	padding: 6px;
+	margin-right: 8px;
+}
+
+#mouseAction a:hover{
+	background:#68C704;
+}
+
